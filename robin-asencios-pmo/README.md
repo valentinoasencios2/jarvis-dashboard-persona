@@ -12,4 +12,11 @@ WhatsApp y correo están en la sección `#contacto` de `index.html`. Para cambia
 
 ## Publicación
 
-La página está publicada en https://valentinoasencios2.github.io desde el repositorio `valentinoasencios2/valentinoasencios2.github.io` (GitHub Pages). Para actualizarla, copie este `index.html` a la raíz de ese repositorio y súbalo a `main`.
+La página está publicada en https://valentinoasencios2.github.io desde el repositorio `valentinoasencios2/valentinoasencios2.github.io` (GitHub Pages). Para actualizarla, copie los archivos de esta carpeta (salvo este README) a la raíz de ese repositorio y súbalos a `main`.
+
+## Google
+
+- Título en Google: `<title>` y `og:title`. Texto debajo del título: `meta description` y `og:description`.
+- Nombre del sitio («Robin Asencios»): datos estructurados `WebSite` dentro de `<script type="application/ld+json">`.
+- Ícono: `favicon.svg`, `favicon-96.png`, `favicon.ico` y `apple-touch-icon.png`.
+- `sitemap.xml` y `robots.txt` le indican a Google qué página leer. Si cambia el contenido, actualice `lastmod` en `sitemap.xml`.
