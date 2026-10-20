@@ -20,3 +20,4 @@ La página está publicada en https://valentinoasencios2.github.io desde el repo
 - Nombre del sitio («Robin Asencios»): datos estructurados `WebSite` dentro de `<script type="application/ld+json">`.
 - Ícono: `favicon.svg`, `favicon-96.png`, `favicon.ico` y `apple-touch-icon.png`.
 - `sitemap.xml` y `robots.txt` le indican a Google qué página leer. Si cambia el contenido, actualice `lastmod` en `sitemap.xml`.
+- No borre la etiqueta `google-site-verification` del `<head>`: Google Search Console la revisa de vez en cuando para mantener la propiedad verificada.
