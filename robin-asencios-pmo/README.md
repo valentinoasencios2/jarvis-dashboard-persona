@@ -10,6 +10,6 @@ Abra `index.html` en el navegador. No necesita compilación.
 
 WhatsApp y correo están en la sección `#contacto` de `index.html`. Para cambiarlos, edite el texto y el enlace (`https://wa.me/51…` y `mailto:`).
 
-## Publicar
+## Publicación
 
-Cualquier hosting estático sirve (GitHub Pages, Netlify, Vercel). En GitHub Pages, publique la carpeta `robin-asencios-pmo/` o mueva `index.html` a la raíz del repositorio.
+La página está publicada en https://valentinoasencios2.github.io desde el repositorio `valentinoasencios2/valentinoasencios2.github.io` (GitHub Pages). Para actualizarla, copie este `index.html` a la raíz de ese repositorio y súbalo a `main`.
