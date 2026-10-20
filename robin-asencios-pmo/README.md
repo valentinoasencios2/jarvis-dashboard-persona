@@ -6,12 +6,9 @@ Página web de una sola página (HTML + CSS + un poco de JS, sin dependencias) p
 
 Abra `index.html` en el navegador. No necesita compilación.
 
-## Datos pendientes
+## Datos de contacto
 
-Antes de publicarla, reemplace los textos marcados en amarillo (`<span class="pendiente">…</span>`):
-
-- **WhatsApp** y **correo**, en la sección `#contacto`. El comentario HTML de esa sección muestra el formato con enlace (`https://wa.me/51…` y `mailto:`). Cuando el dato es real, aparece solo el botón «Copiar».
-- **RUC**, en el pie de página.
+WhatsApp y correo están en la sección `#contacto` de `index.html`. Para cambiarlos, edite el texto y el enlace (`https://wa.me/51…` y `mailto:`).
 
 ## Publicar
 

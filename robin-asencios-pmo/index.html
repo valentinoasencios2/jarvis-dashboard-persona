@@ -357,13 +357,13 @@ h3{font-family:var(--f-titulo)}
 .dato:last-child{border-bottom:1px solid var(--banda-linea)}
 .dato .rotulo{grid-column:1 / -1}
 .dato__v{margin:0;min-width:0;font-stretch:70%;font-weight:800;font-size:clamp(1.7rem,4.4vw,2.6rem);line-height:1.1;overflow-wrap:anywhere}
+.dato__v--correo{font-size:clamp(1.35rem,3.4vw,2.1rem)}
 .dato__v a{color:inherit;text-decoration-thickness:2px;text-decoration-color:var(--banda-linea)}
 .copiar{min-height:40px;padding:0 16px;border-radius:8px;border:1.5px solid var(--banda-tinta-2);background:transparent;color:var(--banda-tinta);font:600 .9rem var(--f-texto);cursor:pointer}
 .copiar:hover{background:var(--banda-tinta);border-color:var(--banda-tinta);color:var(--banda)}
 .agenda__lista{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
 .agenda__lista li{display:flex;align-items:baseline;gap:12px;color:var(--banda-tinta)}
 .agenda__lista .hito{width:7px;height:7px;color:var(--banda-acento);transform:translateY(-2px) rotate(45deg)}
-.pendiente{background:var(--aviso-bg);color:var(--aviso);outline:2px dashed var(--aviso);outline-offset:2px;border-radius:3px;padding:0 6px}
 
 /* Pie */
 .pie{border-top:1px solid var(--banda-linea);padding-block:28px 44px;color:var(--banda-tinta-2);font-size:.9rem}
@@ -741,19 +741,14 @@ h3{font-family:var(--f-titulo)}
     </div>
     <div class="contacto__cuerpo">
       <div class="datos">
-        <!--
-          Datos pendientes. Reemplace cada <span class="pendiente">…</span> por el dato real, por ejemplo:
-          WhatsApp: <a href="https://wa.me/51987654321">+51 987 654 321</a>
-          Correo:   <a href="mailto:nombre@dominio.pe">nombre@dominio.pe</a>
-        -->
         <div class="dato">
           <span class="rotulo">WhatsApp</span>
-          <p class="dato__v" id="dato-whatsapp"><span class="pendiente">[número de WhatsApp]</span></p>
+          <p class="dato__v" id="dato-whatsapp"><a href="https://wa.me/51918260797" target="_blank" rel="noopener">+51 918 260 797</a></p>
           <button class="copiar" type="button" data-copiar="dato-whatsapp">Copiar</button>
         </div>
         <div class="dato">
           <span class="rotulo">Correo</span>
-          <p class="dato__v" id="dato-correo"><span class="pendiente">[correo profesional]</span></p>
+          <p class="dato__v dato__v--correo" id="dato-correo"><a href="mailto:valentinoasencios2@gmail.com">valentinoasencios2@gmail.com</a></p>
           <button class="copiar" type="button" data-copiar="dato-correo">Copiar</button>
         </div>
       </div>
@@ -775,7 +770,6 @@ h3{font-family:var(--f-titulo)}
   <div class="wrap pie__in">
     <p class="pie__marca"><i class="hito" aria-hidden="true"></i>Robin Asencios</p>
     <p>Control de proyectos · PMO</p>
-    <p>RUC <span class="pendiente">[n.º de RUC]</span></p>
     <p>Lima, Perú</p>
     <p class="pie__nota">Los ejemplos de esta página son ilustrativos. © 2026 Robin Asencios.</p>
   </div>
@@ -786,7 +780,7 @@ h3{font-family:var(--f-titulo)}
 (function(){
   document.querySelectorAll('[data-copiar]').forEach(function(btn){
     var objetivo = document.getElementById(btn.getAttribute('data-copiar'));
-    if (!objetivo || objetivo.querySelector('.pendiente')) { btn.hidden = true; return; }
+    if (!objetivo) { btn.hidden = true; return; }
     var texto = objetivo.textContent.trim();
     function aviso(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copiar'; }, 1800); }
     function seleccionar(){
